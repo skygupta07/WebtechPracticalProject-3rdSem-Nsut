@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US trip form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <img  class="bg" src="bglight.avif" alt="background pic">
+    
+    <div class="header">
+        
+        <h2>Welcome to NSUT Fest</h2>
+        <h4>(formerly nsit netaji subhash institute of technology)</h4>   
+        <p>Survey form for college annual trip</p>
+    </div>
+
+    <div class="data">
+        <form action="index.php" method="post">
+            <br> <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Full Name"></input>
+            <br>
+
+            <label for="roll">Roll No.</label>
+            <input type="text" id="roll" name="roll" placeholder="Enter your Roll No."></input>
+            <br>
+            <br>
+            <br>
+
+            <h3>Select Your gender: </h3>
+            <br>
+            <div class="checkb">
+
+                <label for="r1">Male</label>
+                <input type="radio" name="r" id="r1" >
+                
+                <label for="r2">Female</label>
+                <input type="radio" name="r" id="r2" >
+                
+                
+                <label for="r3">prefer not to say</label>
+                <input type="radio" name="r" id="r3" >
+
+            </div>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email"></input>
+            <br>
+
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" name="branch" placeholder="Enter your Branch"></input>
+            <br>
+
+            <label for="year">Year</label>
+            <input type="text" id="year" name="year" placeholder="Enter your year of study"></input>
+            <br> <br> <br>
+
+            
+            <label for="fileSelect1">upload pic(<50kb)> </label>
+            <input type="file" name="raio1" id="fileSelect1" >
+            
+            
+            <div class="upload">
+                <label for="fileSelect1"> </label>
+            </div>
+
+            <br> <br> <br>
+
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="   tell us why you want to join this event?"></textarea>
+            <br> <br>
+
+
+            <div class="submission">
+            <input type="submit" id="button" name="button" ></input>
+            </div>
+        </form>
+
+        
+    </div>
+
+
+
+    <script>
+        document.querySelector(".submission").addEventListener("click", function(){
+            alert("Signed in successfully");
+        })
+    </script>
+   
+
+
+</body>
+</html>
